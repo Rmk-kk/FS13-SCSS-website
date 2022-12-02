@@ -1,0 +1,28 @@
+.main_content_section-bottom {
+  display: grid;
+  grid-template-areas:
+          'a b'
+          'c d e';
+  grid-template-rows: 500px 470px;
+}
+
+.bottom_item-card {
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(1) {
+
+  }
+  &:nth-child(2) {
+
+  }
+  &:nth-child(3) {
+
+  }
+  &:nth-child(4) {
+
+  }
+  &:nth-child(5) {
+
+  }
+}
