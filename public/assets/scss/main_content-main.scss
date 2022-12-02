@@ -1,0 +1,140 @@
+.main_content_section-main {
+
+  & .main_item-card {
+    width: 1205px;
+    padding: 170px 145px 170px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+
+    &_content {
+      position: relative;
+      z-index: 10;
+
+      & h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 1.3;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-family: $secondary-font;
+      }
+
+      &_filters {
+
+        & a {
+          padding: 5px 10px;
+          width: fit-content;
+          text-transform: uppercase;
+          font-size: .7rem;
+          font-weight: bold;
+          letter-spacing: .2rem;
+          border-radius: 15px;
+          transition: all .2s linear;
+          cursor: pointer;
+
+          &:not(:last-child) {
+            margin-right: 7px;
+          }
+        }
+      }
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    &:nth-child(1) {
+      background-image: url('/public/assets/img/main-sections/perfectplace.jpg');
+      background-position: left;
+      background-size: cover;
+
+      & h1 {
+        color: $color-text-primary;
+      }
+
+      & p {
+        color: $color-text-primary;
+      }
+
+      & a {
+        border: 1px solid $color-text-primary;
+        color: $color-text-primary;
+
+        &:hover {
+          background: $color-text-primary;
+          color: $primary-color-grey;
+        }
+      }
+
+      &:after {
+        background-color: rgba(0,0,0,0.3);
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url('/public/assets/img/main-sections/work-best.jpg');
+      background-position: center;
+      background-size: cover;
+
+      & h1 {
+        color: $primary-color-grey;
+      }
+
+      & p {
+        color: $primary-color-grey;
+      }
+
+      & a {
+        border: 1px solid $primary-color-grey;
+        color: $primary-color-grey;
+
+        &:hover {
+          background: $primary-color-grey;
+          color: $color-text-primary;
+        }
+      }
+
+      &:after {
+        background-color: rgba($color-yellow,0.8);
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url('/public/assets/img/main-sections/library.jpg');
+      background-position: left;
+      background-size: cover;
+
+      & h1 {
+        color: $color-text-primary;
+      }
+
+      & p {
+        color: $color-text-primary;
+      }
+
+      & a {
+        border: 1px solid $color-text-primary;
+        color: $color-text-primary;
+
+        &:hover {
+          background: $color-text-primary;
+          color: $primary-color-grey;
+        }
+      }
+
+      &:after {
+        background-color: rgba(0,0,0,0.3);
+      }
+    }
+  }
+}
