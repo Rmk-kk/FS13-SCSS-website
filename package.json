@@ -1,0 +1,22 @@
+{
+  "name": "fs13-css-sass",
+  "version": "1.0.0",
+  "description": "Refer to this [link](https://preview.themeforest.net/item/maido-multipurpose-ghost-blog-theme/full_screen_preview/24837109?_ga=2.259990478.570486835.1654146705-2133876429.1654146705)(see 'Dark version') and create a similar webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rmk-kk/fs13-CSS-SASS.git"
+  },
+  "author": "Roman Demianchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rmk-kk/fs13-CSS-SASS/issues"
+  },
+  "homepage": "https://github.com/Rmk-kk/fs13-CSS-SASS#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
