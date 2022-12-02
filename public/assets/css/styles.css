@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Mulish:wght@400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
+  background-color: #252530;
+}
+
+.header {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 40px 0 60px;
+}
+.header_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_wrap_logo {
+  max-width: 130px;
+}
+.header_wrap_nav-bar {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header_wrap_nav-link {
+  text-decoration: none;
+  color: #ebebeb;
+  position: relative;
+}
+.header_wrap_nav-link::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 0;
+  right: -10px;
+  transition: all 0.2s linear;
+}
+.header_wrap_nav-link:not(:last-child) {
+  margin-right: 25px;
+}
+.header_wrap_nav-link svg {
+  width: 17px;
+  height: 17px;
+  fill: #ebebeb;
+}
+.header_wrap_nav-link:hover:not(:last-child)::after {
+  background: grey;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_content_section-pinned {
+  width: 1450px;
+  display: grid;
+  margin: 0 auto 50px;
+  grid-template-areas: "a a a a b c" "a a a a d e";
+  grid-template-rows: 200px 200px;
+  gap: 15px;
+}
+
+.pinned_item-card {
+  border-radius: 15px;
+  padding: 20px 30px;
+  transition: all 0.1s linear;
+}
+.pinned_item-card_content {
+  position: relative;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pinned_item-card_content span {
+  padding: 5px 10px;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 15px;
+}
+.pinned_item-card_content h2 {
+  font-family: "Corben", serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+.pinned_item-card_content p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.pinned_item-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.pinned_item-card:nth-child(1) {
+  grid-area: a;
+  background: url("/public/assets/img/top-grid/hallway.jpg") center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  width: 590px;
+  height: 420px;
+}
+.pinned_item-card:nth-child(1)::after {
+  background-color: black;
+  opacity: 0.3;
+}
+.pinned_item-card:nth-child(1) span {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.pinned_item-card:nth-child(1) h2 {
+  color: white;
+  font-size: 3rem;
+}
+.pinned_item-card:nth-child(1) p {
+  color: white;
+}
+.pinned_item-card:nth-child(2) {
+  grid-area: b;
+  background: url("/public/assets/img/top-grid/basketball.jpg") center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.pinned_item-card:nth-child(2)::after {
+  background-color: #1723d6;
+  opacity: 0.8;
+}
+.pinned_item-card:nth-child(2) span {
+  background-color: white;
+  color: #1723d6;
+}
+.pinned_item-card:nth-child(2) p, .pinned_item-card:nth-child(2) h2 {
+  color: white;
+}
+.pinned_item-card:nth-child(3) {
+  grid-area: c;
+  background: url("/public/assets/img/top-grid/view.jpg") center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.pinned_item-card:nth-child(3)::after {
+  background-color: #ffb469;
+  opacity: 0.8;
+}
+.pinned_item-card:nth-child(3) span {
+  background-color: #333350;
+  color: #ffb469;
+}
+.pinned_item-card:nth-child(3) p, .pinned_item-card:nth-child(3) h2 {
+  color: #333350;
+}
+.pinned_item-card:nth-child(4) {
+  grid-area: d;
+  background: url("/public/assets/img/top-grid/desktop.jpg") center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.pinned_item-card:nth-child(4)::after {
+  background-color: #66077c;
+  opacity: 0.8;
+}
+.pinned_item-card:nth-child(4) span {
+  background-color: white;
+  color: #66077c;
+}
+.pinned_item-card:nth-child(4) p, .pinned_item-card:nth-child(4) h2 {
+  color: white;
+}
+.pinned_item-card:nth-child(5) {
+  grid-area: e;
+  background: url("/public/assets/img/top-grid/hall.jpg") center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.pinned_item-card:nth-child(5)::after {
+  background-color: #df8cbf;
+  opacity: 0.8;
+}
+.pinned_item-card:nth-child(5) span {
+  background-color: #333350;
+  color: #df8cbf;
+}
+.pinned_item-card:nth-child(5) p, .pinned_item-card:nth-child(5) h2 {
+  color: #333350;
+}
+.pinned_item-card:hover {
+  transform: translateY(-3px);
+}
+
+/*# sourceMappingURL=styles.css.map */
