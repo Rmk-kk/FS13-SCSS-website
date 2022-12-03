@@ -78,6 +78,10 @@ body {
   width: 17px;
   height: 17px;
   fill: #ebebeb;
+  transition: fill 0.1s linear;
+}
+.header_wrap_nav-link svg:hover {
+  fill: #FED672;
 }
 .header_wrap_nav-link:hover:not(:last-child)::after {
   background: grey;

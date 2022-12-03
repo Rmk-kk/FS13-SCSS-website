@@ -45,6 +45,11 @@
           width: 17px;
           height: 17px;
           fill:$color-text-primary;
+          transition: fill .1s linear;
+
+          &:hover {
+            fill: $color-yellow;
+          }
         }
 
         &:hover:not(:last-child)::after{
