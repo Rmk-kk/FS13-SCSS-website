@@ -76,7 +76,7 @@
 
   &:nth-child(1) {
     grid-area: a;
-    background-image: url('/public/assets/img/bottom-grid/problems.jpg');
+    background-image: url('../img/bottom-grid/problems.jpg');
     padding: 120px 45px;
 
     h2 {
@@ -112,7 +112,7 @@
 
   &:nth-child(2) {
     grid-area: b;
-    background-image: url('/public/assets/img/bottom-grid/quitetime.jpg');
+    background-image: url('../img/bottom-grid/quitetime.jpg');
     padding: 120px 45px;
 
     h2 {
@@ -136,7 +136,7 @@
 
   &:nth-child(3) {
     grid-area: c;
-    background-image: url('/public/assets/img/bottom-grid/beingunique.jpg');
+    background-image: url('../img/bottom-grid/beingunique.jpg');
 
     h2,p {
       color: $color-text-primary;
@@ -159,7 +159,7 @@
 
   &:nth-child(4) {
     grid-area: d;
-    background-image: url('/public/assets/img/bottom-grid/hall.jpg');
+    background-image: url('../img/bottom-grid/hall.jpg');
 
     & h2 {
       position: relative;
@@ -193,7 +193,7 @@
 
   &:nth-child(5) {
     grid-area: e;
-    background-image: url('/public/assets/img/bottom-grid/change.jpg');
+    background-image: url('../img/bottom-grid/change.jpg');
 
     & h2,p {
       color: $color-text-primary;

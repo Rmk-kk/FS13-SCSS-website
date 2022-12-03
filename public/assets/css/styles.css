@@ -186,7 +186,7 @@ body {
 }
 .pinned_item-card:nth-child(3) {
   grid-area: c;
-  background: url("./public/assets/img/top-grid/view.jpg") center;
+  background: url("../img/top-grid/view.jpg") center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -204,7 +204,7 @@ body {
 }
 .pinned_item-card:nth-child(4) {
   grid-area: d;
-  background: url("./public/assets/img/top-grid/desktop.jpg") center;
+  background: url("../img/top-grid/desktop.jpg") center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -222,7 +222,7 @@ body {
 }
 .pinned_item-card:nth-child(5) {
   grid-area: e;
-  background: url("./public/assets/img/top-grid/hall.jpg") center;
+  background: url("../img/top-grid/hall.jpg") center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -301,7 +301,7 @@ body {
   margin-bottom: 50px;
 }
 .main_content_section-main .main_item-card:nth-child(1) {
-  background-image: url("/public/assets/img/main-sections/perfectplace.jpg");
+  background-image: url("../img/main-sections/perfectplace.jpg");
   background-position: left;
 }
 .main_content_section-main .main_item-card:nth-child(1) h1 {
@@ -322,7 +322,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .main_content_section-main .main_item-card:nth-child(2) {
-  background-image: url("/public/assets/img/main-sections/work-best.jpg");
+  background-image: url("../img/main-sections/work-best.jpg");
   background-position: center;
 }
 .main_content_section-main .main_item-card:nth-child(2) h1 {
@@ -343,7 +343,7 @@ body {
   background-color: rgba(254, 214, 114, 0.8);
 }
 .main_content_section-main .main_item-card:nth-child(3) {
-  background-image: url("/public/assets/img/main-sections/library.jpg");
+  background-image: url("../img/main-sections/library.jpg");
   background-position: left;
 }
 .main_content_section-main .main_item-card:nth-child(3) h1 {
@@ -451,7 +451,7 @@ body {
 }
 .bottom_item-card:nth-child(1) {
   grid-area: a;
-  background-image: url("/public/assets/img/bottom-grid/problems.jpg");
+  background-image: url("../img/bottom-grid/problems.jpg");
   padding: 120px 45px;
 }
 .bottom_item-card:nth-child(1) h2 {
@@ -480,7 +480,7 @@ body {
 }
 .bottom_item-card:nth-child(2) {
   grid-area: b;
-  background-image: url("/public/assets/img/bottom-grid/quitetime.jpg");
+  background-image: url("../img/bottom-grid/quitetime.jpg");
   padding: 120px 45px;
 }
 .bottom_item-card:nth-child(2) h2 {
@@ -499,7 +499,7 @@ body {
 }
 .bottom_item-card:nth-child(3) {
   grid-area: c;
-  background-image: url("/public/assets/img/bottom-grid/beingunique.jpg");
+  background-image: url("../img/bottom-grid/beingunique.jpg");
 }
 .bottom_item-card:nth-child(3) h2, .bottom_item-card:nth-child(3) p {
   color: #ebebeb;
@@ -517,7 +517,7 @@ body {
 }
 .bottom_item-card:nth-child(4) {
   grid-area: d;
-  background-image: url("/public/assets/img/bottom-grid/hall.jpg");
+  background-image: url("../img/bottom-grid/hall.jpg");
 }
 .bottom_item-card:nth-child(4) h2 {
   position: relative;
@@ -544,7 +544,7 @@ body {
 }
 .bottom_item-card:nth-child(5) {
   grid-area: e;
-  background-image: url("/public/assets/img/bottom-grid/change.jpg");
+  background-image: url("../img/bottom-grid/change.jpg");
 }
 .bottom_item-card:nth-child(5) h2, .bottom_item-card:nth-child(5) p {
   color: #ebebeb;
