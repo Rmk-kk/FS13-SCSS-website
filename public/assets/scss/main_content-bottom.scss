@@ -1,28 +1,232 @@
 .main_content_section-bottom {
-  display: grid;
-  grid-template-areas:
-          'a b'
-          'c d e';
-  grid-template-rows: 500px 470px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1205px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 175px;
+
+  &_title {
+    font-weight: 900;
+    text-transform: uppercase;
+    color:$color-text-primary;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    margin-bottom: 45px;
+  }
+
+  &_wrap {
+    display: grid;
+    grid-template-areas:
+          'a a a b b b'
+          'c c d d e e';
+    grid-template-rows: 550px 470px;
+    gap: 25px;
+    margin-bottom: 33px;
+  }
 }
 
 .bottom_item-card {
   display: flex;
+  position: relative;
   flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 75px 45px;
+  background-size: 100%;
+
+  @include webkit_transition-background-size;
+
+  &_content {
+    position: relative;
+    z-index: 100;
+
+    &_filters {
+      @include filter_styling;
+    }
+
+    &-text {
+
+      & h2 {
+        margin:25px 0 10px;
+        line-height: 1.4;
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: $color-text-secondary;
+        padding-bottom: 25px;
+      }
+
+      & p {
+        font-size: 1.4rem;
+        font-weight: 700;
+        font-family: $primary-font;
+        line-height: 1.3;
+        color: $color-text-secondary;
+      }
+    }
+  }
+
+  @include create_cover;
+
+  &:hover {
+    background-size: 103%;
+  }
 
   &:nth-child(1) {
+    grid-area: a;
+    background-image: url('/public/assets/img/bottom-grid/problems.jpg');
+    padding: 120px 45px;
 
+    h2 {
+      font-size: 3rem;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 7%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+
+        background-color: $color-text-secondary;
+      }
+    }
+
+    & a {
+      border: 1px solid $primary-color-grey;
+      color: $primary-color-grey;
+
+      &:hover {
+        background: $primary-color-grey;
+        color: $color-text-primary;
+      }
+    }
+
+    &:after {
+      background-color: rgba($color-light-pink, 0.85);
+    }
   }
+
   &:nth-child(2) {
+    grid-area: b;
+    background-image: url('/public/assets/img/bottom-grid/quitetime.jpg');
+    padding: 120px 45px;
 
+    h2 {
+      font-size: 3rem;
+    }
+
+    & a {
+      border: 1px solid $primary-color-grey;
+      color: $primary-color-grey;
+
+      &:hover {
+        background: $primary-color-grey;
+        color: $color-text-primary;
+      }
+    }
+
+    &:after {
+      background-color: rgba($color-orange, .85);
+    }
   }
+
   &:nth-child(3) {
+    grid-area: c;
+    background-image: url('/public/assets/img/bottom-grid/beingunique.jpg');
 
+    h2,p {
+      color: $color-text-primary;
+    }
+
+    a {
+      border: 1px solid $color-text-primary;
+      color: $color-text-primary;
+
+      &:hover {
+        background: $color-text-primary;
+        color: $primary-color-grey;
+      }
+    }
+
+    &:after {
+      background-color: rgba(black, .3);
+    }
   }
+
   &:nth-child(4) {
+    grid-area: d;
+    background-image: url('/public/assets/img/bottom-grid/hall.jpg');
 
+    & h2 {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 7%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+
+        background-color: $color-text-secondary;
+      }
+    }
+
+    & a {
+      border: 1px solid $primary-color-grey;
+      color: $primary-color-grey;
+
+      &:hover {
+        background: $primary-color-grey;
+        color: $color-text-primary;
+      }
+    }
+
+    &:after {
+      background-color: rgba($color-pink, .85);
+    }
   }
-  &:nth-child(5) {
 
+  &:nth-child(5) {
+    grid-area: e;
+    background-image: url('/public/assets/img/bottom-grid/change.jpg');
+
+    & h2,p {
+      color: $color-text-primary;
+    }
+
+    & h2 {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 7%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+
+        background-color: $color-text-primary;
+      }
+    }
+
+
+    & a {
+      border: 1px solid $color-text-primary;
+      color: $color-text-primary;
+
+      &:hover {
+        background: $color-text-primary;
+        color: $primary-color-grey;
+      }
+    }
+
+    &:after {
+      background-color: rgba(black, .3);
+    }
   }
 }

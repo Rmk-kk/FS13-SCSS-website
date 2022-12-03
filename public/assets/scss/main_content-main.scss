@@ -1,4 +1,5 @@
 .main_content_section-main {
+  margin-bottom: 60px;
 
   & .main_item-card {
     width: 1205px;
@@ -9,17 +10,11 @@
     cursor: pointer;
     background-size: 100%;
 
-    transition: background-size .1s ease-in;
-    -moz-transition: background-size .1s ease-in;
-    -ms-transition: background-size .1s ease-in;
-    -o-transition: background-size .1s ease-in;
-    -webkit-transition: background-size .1s ease-in;
-
-
+    @include webkit_transition-background-size;
 
     &_content {
       position: relative;
-      z-index: 10;
+      z-index: 100;
 
       & h1 {
         margin-top: 30px;
@@ -31,35 +26,11 @@
       }
 
       &_filters {
-
-        & a {
-          padding: 5px 10px;
-          width: fit-content;
-          text-transform: uppercase;
-          font-size: .7rem;
-          font-weight: bold;
-          letter-spacing: .2rem;
-          border-radius: 15px;
-          transition: all .2s linear;
-          cursor: pointer;
-
-          &:not(:last-child) {
-            margin-right: 7px;
-          }
-        }
+        @include filter_styling;
       }
     }
 
-
-
-    &:after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    @include create_cover;
 
     &:hover {
       background-size: 102%;
