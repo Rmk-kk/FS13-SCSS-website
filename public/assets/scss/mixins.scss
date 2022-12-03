@@ -35,3 +35,44 @@
   -o-transition: background-size .1s ease-in;
   -webkit-transition: background-size .1s ease-in;
 }
+
+@mixin btn-design {
+  position: relative;
+  overflow: hidden;
+  color:$color-text-primary;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  border-radius: 16px;
+  background-color: $color-yellow;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  & span {
+    position: relative;
+    z-index: 100;
+  }
+
+  &:after {
+    border-radius: 16px;
+    position: absolute;
+    z-index: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: $color-btn;
+    top:0;
+    left: 0;
+    transition: height .1s linear;
+  }
+
+  &:hover {
+    color: $color-text-secondary;
+
+    &:after {
+      height: 0%;
+    }
+  }
+
+}

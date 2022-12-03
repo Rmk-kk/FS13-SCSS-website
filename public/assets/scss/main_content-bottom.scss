@@ -230,3 +230,8 @@
     }
   }
 }
+
+.main_content-btn {
+  padding: 30px 420px;
+  @include btn-design;
+}

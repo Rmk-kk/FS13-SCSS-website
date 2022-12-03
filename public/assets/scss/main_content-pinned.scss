@@ -66,12 +66,12 @@
     }
 
     & h2 {
-      color: white;
+      color: $color-text-primary;
       font-size: 3rem;
     }
 
     & p {
-      color: white;
+      color: $color-text-primary;
     }
   }
 
@@ -88,12 +88,12 @@
     }
 
     & span {
-      background-color: white;
+      background-color: $color-text-primary;
       color:$color-blue;
     }
 
     &  p,h2 {
-      color:white;
+      color:$color-text-primary;
     }
   }
 
@@ -132,12 +132,12 @@
     }
 
     & span {
-      background-color: white;
+      background-color: $color-text-primary;
       color:$color-purple;
     }
 
     &  p,h2 {
-      color:white;
+      color:$color-text-primary;
     }
   }
 
