@@ -50,7 +50,7 @@
 
   &:nth-child(1) {
     grid-area: a;
-    background: url("./public/assets/img/top-grid/hallway.jpg") center;
+    background: url("../img/top-grid/hallway.jpg") center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -77,7 +77,7 @@
 
   &:nth-child(2) {
     grid-area: b;
-    background: url("./public/assets/img/top-grid/basketball.jpg") center;
+    background: url("../img/top-grid/basketball.jpg") center;
     background-size: cover;
     position: relative;
     overflow: hidden;
