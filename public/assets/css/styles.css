@@ -146,7 +146,7 @@ body {
 }
 .pinned_item-card:nth-child(1) {
   grid-area: a;
-  background: url("/public/assets/img/top-grid/hallway.jpg") center;
+  background: url("./public/assets/img/top-grid/hallway.jpg") center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -168,7 +168,7 @@ body {
 }
 .pinned_item-card:nth-child(2) {
   grid-area: b;
-  background: url("/public/assets/img/top-grid/basketball.jpg") center;
+  background: url("./public/assets/img/top-grid/basketball.jpg") center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -186,7 +186,7 @@ body {
 }
 .pinned_item-card:nth-child(3) {
   grid-area: c;
-  background: url("/public/assets/img/top-grid/view.jpg") center;
+  background: url("./public/assets/img/top-grid/view.jpg") center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -204,7 +204,7 @@ body {
 }
 .pinned_item-card:nth-child(4) {
   grid-area: d;
-  background: url("/public/assets/img/top-grid/desktop.jpg") center;
+  background: url("./public/assets/img/top-grid/desktop.jpg") center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -222,7 +222,7 @@ body {
 }
 .pinned_item-card:nth-child(5) {
   grid-area: e;
-  background: url("/public/assets/img/top-grid/hall.jpg") center;
+  background: url("./public/assets/img/top-grid/hall.jpg") center;
   background-size: cover;
   position: relative;
   overflow: hidden;
