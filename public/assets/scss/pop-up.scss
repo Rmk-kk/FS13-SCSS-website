@@ -1,0 +1,123 @@
+.pop-up_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  justify-content: flex-end;
+
+  &_content {
+    position: absolute;
+    right: 0;
+    max-width: 790px;
+    height: 100vh;
+    background: $primary-color-grey;
+    padding: 55px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color:$color-text-primary;
+    animation: popup-animation-appear .2s linear;
+
+    & input {
+      width: 100%;
+      font-size: 3rem;
+      font-weight: bold;
+      color:$color-text-primary;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $color-text-primary;
+      padding:10px 2px;
+      margin-bottom: 10px;
+
+      &::placeholder {
+        color:#545260;
+      }
+
+
+    }
+
+    & label {
+      font-size: .7rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 95px;
+    }
+
+    & h2 {
+      font-size: 2.6rem;
+      font-weight: bold;
+      line-height: 1.5;
+      font-family: $secondary-font;
+      margin-bottom: 25px;
+    }
+
+    &-filters {
+      margin-bottom: 45px;
+      @include filter_styling;
+
+      & a {
+        border: 1px solid $color-text-primary;
+        &:hover {
+          background: $color-text-primary;
+          color:$primary-color-grey;
+        }
+      }
+
+    }
+
+    &-authors {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &-card {
+        max-width: 145px;
+        background-color: #2A2A35;
+        font-family: $secondary-font;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 15px;
+
+        & h3 {
+          padding: 15px 16px;
+        }
+      }
+    }
+
+    & svg {
+      width: 25px;
+      height: 25px;
+      fill: $color-text-primary;
+      transition: all .2s linear;
+      cursor: pointer;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+
+      &:hover {
+        fill:$color-yellow;
+      }
+    }
+  }
+}
+
+@keyframes popup-animation-appear {
+  from {
+    transform: translateX(790px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

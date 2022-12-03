@@ -97,3 +97,13 @@
   }
 }
 
+*[data-active]{
+  &:after {
+    background: $color-yellow;
+  }
+
+  &:hover:after {
+    background: $color-yellow !important;
+  }
+}
+

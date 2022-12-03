@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Mulish:wght@400;500;600;700;900&display=swap");
+*[data-active]:after {
+  background: #FED672;
+}
+*[data-active]:hover:after {
+  background: #FED672 !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +34,10 @@ body {
   left: 3rem;
 }
 
+.is-active {
+  display: flex;
+}
+
 .header {
   max-width: 1230px;
   margin: 0 auto;
@@ -50,7 +61,7 @@ body {
   color: #ebebeb;
   position: relative;
 }
-.header_wrap_nav-link::after {
+.header_wrap_nav-link:after {
   content: "";
   position: absolute;
   width: 5px;
@@ -695,6 +706,126 @@ body {
   }
   50% {
     border-color: #FED672;
+  }
+}
+.pop-up_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  justify-content: flex-end;
+}
+.pop-up_overlay_content {
+  position: absolute;
+  right: 0;
+  max-width: 790px;
+  height: 100vh;
+  background: #252530;
+  padding: 55px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #ebebeb;
+  animation: popup-animation-appear 0.2s linear;
+}
+.pop-up_overlay_content input {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ebebeb;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ebebeb;
+  padding: 10px 2px;
+  margin-bottom: 10px;
+}
+.pop-up_overlay_content input::placeholder {
+  color: #545260;
+}
+.pop-up_overlay_content label {
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 95px;
+}
+.pop-up_overlay_content h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: "Corben", serif;
+  margin-bottom: 25px;
+}
+.pop-up_overlay_content-filters {
+  margin-bottom: 45px;
+}
+.pop-up_overlay_content-filters a {
+  padding: 5px 10px;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 15px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.pop-up_overlay_content-filters a:not(:last-child) {
+  margin-right: 7px;
+}
+.pop-up_overlay_content-filters a {
+  border: 1px solid #ebebeb;
+}
+.pop-up_overlay_content-filters a:hover {
+  background: #ebebeb;
+  color: #252530;
+}
+.pop-up_overlay_content-authors {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pop-up_overlay_content-authors-card {
+  max-width: 145px;
+  background-color: #2A2A35;
+  font-family: "Corben", serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.pop-up_overlay_content-authors-card h3 {
+  padding: 15px 16px;
+}
+.pop-up_overlay_content svg {
+  width: 25px;
+  height: 25px;
+  fill: #ebebeb;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.pop-up_overlay_content svg:hover {
+  fill: #FED672;
+}
+
+@keyframes popup-animation-appear {
+  from {
+    transform: translateX(790px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 .footer {

@@ -18,14 +18,14 @@
         <div class="header_wrap">
             <img class="header_wrap_logo" src="./public/assets/img/service/logo.svg" alt="Logo">
             <nav class="header_wrap_nav-bar">
-                <a class="header_wrap_nav-link is-active" href="#">Home</a>
+                <a class="header_wrap_nav-link is-active" data-active href="#">Home</a>
                 <a class="header_wrap_nav-link" href="#">Features</a>
                 <a class="header_wrap_nav-link" href="#">Style Guide</a>
                 <a class="header_wrap_nav-link" href="#">Contact</a>
                 <a class="header_wrap_nav-link" href="#">Newsletter</a>
                 <a class="header_wrap_nav-link" href="#">Demos</a>
                 <a class="header_wrap_nav-link" href="#">Get Theme</a>
-                <a class="header_wrap_nav-link" href="#">
+                <a class="header_wrap_nav-link" href="#" id="togglePopUp">
                     <svg class="global-svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.063 16.384l4.325 4.323c.391.392.63.924.611 1.475-.032.926-.646 1.649-1.68 1.736-.551.046-1.086-.22-1.476-.61l-4.325-4.325c-1.706 1.131-4.034 1.895-6.08 1.893C4.673 20.875 0 16.202 0 10.438 0 4.673 4.673 0 10.438 0c5.764 0 10.437 4.673 10.437 10.438 0 2.127-.718 4.294-1.812 5.945v.001zm-8.625 1.032c3.839 0 6.997-3.161 6.997-7 0-3.84-3.16-7-6.999-7-3.84 0-7.001 3.16-7.001 7 0 3.839 3.161 6.998 7.001 6.998l.002.002z"></path>
                     </svg>
@@ -35,6 +35,47 @@
     </header>
     <main class="main_content">
         <span class="pinned-text">Thoughts, stories and ideas</span>
+        <div class="pop-up_overlay">
+            <div class="pop-up_overlay_content">
+                <svg id="popUpClose" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.3979 12.5L24.1927 20.2948C24.7104 20.8125 25 21.5135 25 22.2448C24.9964 22.9744 24.705 23.6732 24.1891 24.1891C23.6732 24.705 22.9744 24.9964 22.2448 25C21.8827 25.0001 21.5241 24.9289 21.1895 24.7904C20.8549 24.6519 20.5509 24.4488 20.2948 24.1927L12.5 16.3979L4.70521 24.1927C4.44914 24.4488 4.14513 24.6519 3.81054 24.7904C3.47595 24.9289 3.11734 25.0001 2.75521 25C2.02558 24.9964 1.32685 24.705 0.810915 24.1891C0.294983 23.6732 0.00356009 22.9744 1.93223e-07 22.2448C1.93223e-07 21.5135 0.289583 20.8125 0.807292 20.2948L8.60208 12.5L0.807292 4.70521C0.551226 4.44914 0.34813 4.14513 0.209611 3.81054C0.0710917 3.47595 -0.000135398 3.11734 1.93223e-07 2.75521C0.00356009 2.02558 0.294983 1.32685 0.810915 0.810915C1.32685 0.294983 2.02558 0.0035599 2.75521 0C3.48646 0 4.1875 0.289583 4.70521 0.807292L12.5 8.60208L20.2948 0.807292C20.8114 0.290649 21.5121 0.000278692 22.2427 0C22.9731 0.00301632 23.6726 0.294484 24.1891 0.810924C24.7055 1.32736 24.997 2.02694 25 2.75729C25 3.48646 24.7104 4.1875 24.1927 4.70521L16.3979 12.5Z"/>
+                </svg>
+
+                <input type="text" class="pop-up_overlay_content-input" id="keyword" placeholder="Type your keywords">
+                <label for="keyword">Please enter at least 3 characters</label>
+                <h2 class="pop-up_overlay_content-title">May we suggest a tag?</h2>
+                <div class="pop-up_overlay_content-filters">
+                    <a>Case study</a>
+                    <a>Open Space</a>
+                    <a>Creative</a>
+                    <a>Productivity</a>
+                    <a>Furniture</a>
+                </div>
+                <h2 class="pop-up_overlay_content-title">May we suggest an author?</h2>
+                <div class="pop-up_overlay_content-authors">
+                    <div class="pop-up_overlay_content-authors-card">
+                        <img src="./public/assets/img/pop-up/margaret.jpg" alt="margaret">
+                        <h3>Margaret Robertson</h3>
+                    </div>
+                    <div class="pop-up_overlay_content-authors-card">
+                        <img src="./public/assets/img/pop-up/patricia.png" alt="patricia">
+                        <h3>Patricia Jenkins</h3>
+                    </div>
+                    <div class="pop-up_overlay_content-authors-card">
+                        <img src="./public/assets/img/pop-up/james.png" alt="james">
+                        <h3>James Bryant</h3>
+                    </div>
+                    <div class="pop-up_overlay_content-authors-card">
+                        <img src="./public/assets/img/pop-up/sean.png" alt="sean">
+                        <h3>Sean Hamilton</h3>
+                    </div>
+                    <div class="pop-up_overlay_content-authors-card">
+                        <img src="./public/assets/img/pop-up/janet.png" alt="janet">
+                        <h3>Janet Robertson</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="main_content_section-pinned">
             <div class="pinned_item-card">
                 <div class="pinned_item-card_content">
@@ -196,7 +237,7 @@
     <footer class="footer">
     <div class="footer-navigation">
         <ul class="footer-navigation_bar">
-            <li class="footer-navigation_bar-item  active-class">Home</li>
+            <li class="footer-navigation_bar-item" data-active>Home</li>
             <li class="footer-navigation_bar-item">Features</li>
             <li class="footer-navigation_bar-item">Style Guide</li>
             <li class="footer-navigation_bar-item">Contact</li>
@@ -230,5 +271,7 @@
     </div>
     <h5 class="footer-disclaimer">Maido © 2022. All Right Reserved. Published with Ghost & Maido.</h5>
 </footer>
+
+<script src="public/assets/script.js"></script>
 </body>
 </html>
