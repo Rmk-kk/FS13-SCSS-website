@@ -71,8 +71,29 @@
     color: $color-text-secondary;
 
     &:after {
-      height: 0%;
+      height: 0;
     }
   }
 
 }
+
+@mixin navigation-hover-effect {
+  &:after {
+    position: absolute;
+    z-index: -1;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 0;
+    right: -10px;
+    content: '';
+    transition: background .1s linear;
+  }
+
+  &:hover {
+    &:after {
+      background: $color-text-primary;
+    }
+  }
+}
+

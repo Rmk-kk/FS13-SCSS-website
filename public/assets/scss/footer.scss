@@ -1,0 +1,54 @@
+.footer {
+  display: flex;
+  max-width:1230px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 0 15px 30px;
+  color:$color-text-primary;
+
+  &-navigation {
+    display: flex;
+    justify-content: space-between;
+
+    &_bar {
+      display: flex;
+      margin-bottom: 15px;
+
+      & li {
+        position: relative;
+        @include navigation-hover-effect;
+      }
+    }
+
+    &_icons {
+      display: flex;
+
+      & svg {
+        fill: $color-text-primary;
+        width: 20px;
+        height: 20px;
+        transition: all .2s linear;
+
+        &:hover {
+          fill: $color-yellow;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    & li {
+      list-style: none;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+    }
+  }
+
+  & h5 {
+    font-weight: 400;
+  }
+}
