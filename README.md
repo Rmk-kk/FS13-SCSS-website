@@ -1,20 +1,89 @@
 # CSS/SASS , Grid , Flexbox Assignment
 
-Refer to this [link](https://preview.themeforest.net/item/maido-multipurpose-ghost-blog-theme/full_screen_preview/24837109?_ga=2.259990478.570486835.1654146705-2133876429.1654146705)(see 'Dark version') and create a similar webpage
+![Generic badge](https://img.shields.io/badge/CSS-v.3-green.svg)
+![Generic badge](https://img.shields.io/badge/HTML-v.5-blue.svg)
+![Generic badge](https://img.shields.io/badge/SASS-v.1.56-pink.svg)
 
-## Requirements (max 4)
+## Technologies
+* HTML 5
+* CSS 3
+* SASS (mixins, variables, SCSS)
 
-1. Floating the HTML elements using Flexbox and Grid system
-2. Implementing basic animations as shown in the webpage (hover effect,
-active link styles, typing effect). You can modify the outlook of the effects
-3. Implement you codes, using the platform of your choice (For example, Github Pages), then rewrite README file.
+## Project Structure
 
-This assignment only requires 1 static page. No JavaScript needed.
-Font family and text content can be modified as your preferences.
-You can ignore the small buttons/tags/lables in each card. Only
-texts with some styles are enough.
+``` bash 
+│   .gitignore
+│   index.html
+│   package-lock.json
+│   package.json
+│   README.md
+└───public
+    └───assets
+        │   script.js
+        │
+        ├───css
+        │       styles.css
+        │       styles.css.map
+        │
+        ├───img
+        │   ├───bottom-grid
+        │   │       beingunique.jpg
+        │   │       change.jpg
+        │   │       hall.jpg
+        │   │       problems.jpg
+        │   │       quitetime.jpg
+        │   │
+        │   ├───footer
+        │   │       instagr.svg
+        │   │       logo3.svg
+        │   │       twitter.svg
+        │   │       Vector.svg
+        │   │
+        │   ├───main-sections
+        │   │       library.jpg
+        │   │       perfectplace.jpg
+        │   │       work-best.jpg
+        │   │
+        │   ├───pop-up
+        │   │       james.png
+        │   │       janet.png
+        │   │       margaret.jpg
+        │   │       patricia.png
+        │   │       sean.png
+        │   │
+        │   ├───service
+        │   │       cross.svg
+        │   │       logo.svg
+        │   │
+        │   └───top-grid
+        │           basketball.jpg
+        │           desktop.jpg
+        │           hall.jpg
+        │           hallway.jpg
+        │           view.jpg
+        │
+        └───scss
+                body.scss
+                footer.scss
+                header.scss
+                main.scss
+                main_content-bottom.scss
+                main_content-form.scss
+                main_content-main.scss
+                main_content-pinned.scss
+                main_content.scss
+                mixins.scss
+                pop-up.scss
+                variables.scss
 
-## Bonus points (max 1)
+```
 
-1. Using SASS (either .sass or .scss) for styling
-2. Make use of variables, mixin, extend
+## Credits
+
+Website is copied from [Maido's design](https://maido-dark.fueko.net/) with small changes.
+
+## Getting Started
+
+Clone the repository from github with `git clone`. <br>
+Check repository on `https://github.com/Rmk-kk/FS13-SCSS-website.git`. <br>
+Website deployed on [GitHub pages](https://rmk-kk.github.io/FS13-SCSS-website/).

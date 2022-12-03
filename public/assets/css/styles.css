@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Mulish:wght@400;500;600;700;900&display=swap");
 *[data-active]:after {
-  background: #FED672;
+  background: #ffb469;
 }
 *[data-active]:hover:after {
-  background: #FED672 !important;
+  background: #ffb469 !important;
 }
 
 * {
@@ -81,7 +81,7 @@ body {
   transition: fill 0.1s linear;
 }
 .header_wrap_nav-link svg:hover {
-  fill: #FED672;
+  fill: #ffb469;
 }
 .header_wrap_nav-link:hover:not(:last-child)::after {
   background: grey;
@@ -581,7 +581,7 @@ body {
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
   border-radius: 16px;
-  background-color: #FED672;
+  background-color: #ffb469;
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -634,7 +634,7 @@ body {
   color: #ebebeb;
   font-family: "Mulish", sans-serif;
   overflow: hidden;
-  border-right: 0.15em solid #FED672;
+  border-right: 0.15em solid #ffb469;
   white-space: nowrap;
   letter-spacing: 0.15em;
   animation: typing 6s steps(31, end) infinite, blink-caret 0.7s step-end infinite;
@@ -650,8 +650,11 @@ body {
   border-bottom: 1px solid #ebebeb;
   font-size: 1.8rem;
   font-weight: 900;
-  color: #363643;
+  color: #ebebeb;
   transition: width 0.2s ease-in;
+}
+.form-input::placeholder {
+  color: #363643;
 }
 .form-input:focus {
   width: 100%;
@@ -663,7 +666,7 @@ body {
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
   border-radius: 16px;
-  background-color: #FED672;
+  background-color: #ffb469;
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -709,7 +712,7 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: #FED672;
+    border-color: #ffb469;
   }
 }
 .pop-up_overlay {
@@ -734,7 +737,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   color: #ebebeb;
-  animation: popup-animation-appear 0.2s linear;
+  animation: popup-animation-appear 0.3s linear;
 }
 .pop-up_overlay_content input {
   width: 100%;
@@ -804,9 +807,17 @@ body {
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 0.1s linear;
 }
 .pop-up_overlay_content-authors-card h3 {
   padding: 15px 16px;
+}
+.pop-up_overlay_content-authors-card:hover {
+  transform: translateY(-5px);
+}
+.pop-up_overlay_content-authors-card img {
+  width: 100%;
 }
 .pop-up_overlay_content svg {
   width: 25px;
@@ -819,7 +830,7 @@ body {
   right: 30px;
 }
 .pop-up_overlay_content svg:hover {
-  fill: #FED672;
+  fill: #ffb469;
 }
 
 @keyframes popup-animation-appear {
@@ -875,7 +886,7 @@ body {
   transition: all 0.2s linear;
 }
 .footer-navigation_icons svg:hover {
-  fill: #FED672;
+  fill: #ffb469;
   transform: scale(1.1);
 }
 .footer-navigation li {

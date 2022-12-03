@@ -8,7 +8,6 @@ const modals = () => {
             if(e.target) {
                 e.preventDefault();
             }
-
             modal.style.display = 'block';
             document.body.style.overflow = 'none';
         })

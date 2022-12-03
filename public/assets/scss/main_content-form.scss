@@ -24,7 +24,7 @@
     color: $color-text-primary;
     font-family: $primary-font;
     overflow: hidden;
-    border-right: .15em solid $color-yellow;
+    border-right: .15em solid $color-orange;
     white-space: nowrap;
     letter-spacing: .15em;
     animation:
@@ -43,8 +43,12 @@
     border-bottom: 1px solid $color-text-primary;
     font-size: 1.8rem;
     font-weight: 900;
-    color: $color-btn;
+    color: $color-text-primary;
     transition: width .2s ease-in;
+
+    &::placeholder {
+      color:$color-btn;
+    }
 
     &:focus {
       width: 100%;
@@ -74,5 +78,5 @@
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: $color-yellow; }
+  50% { border-color: $color-orange; }
 }

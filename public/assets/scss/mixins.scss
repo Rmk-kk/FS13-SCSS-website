@@ -43,7 +43,7 @@
   font-family: $primary-font;
   text-transform: uppercase;
   border-radius: 16px;
-  background-color: $color-yellow;
+  background-color: $color-orange;
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -99,11 +99,11 @@
 
 *[data-active]{
   &:after {
-    background: $color-yellow;
+    background: $color-orange;
   }
 
   &:hover:after {
-    background: $color-yellow !important;
+    background: $color-orange !important;
   }
 }
 
