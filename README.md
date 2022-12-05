@@ -65,18 +65,22 @@
         │           view.jpg
         │
         └───scss
-                body.scss
-                footer.scss
-                header.scss
-                main.scss
-                main_content-bottom.scss
-                main_content-form.scss
-                main_content-main.scss
-                main_content-pinned.scss
-                main_content.scss
-                mixins.scss
-                pop-up.scss
-                variables.scss
+            │   main.scss
+            │   _main_content-bottom.scss
+            │   _main_content-form.scss
+            │   _main_content-main.scss
+            │   _main_content-pinned.scss
+            │   _main_content.scss
+            │
+            ├───abstracts
+            │       _mixins.scss
+            │       _variables.scss
+            │
+            └───layout
+                    _body.scss
+                    _footer.scss
+                    _header.scss
+                    _pop-up.scss
 
 ```
 
