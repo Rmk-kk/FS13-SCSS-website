@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Mulish:wght@400;500;600;700;900&display=swap");
-*[data-active]:after {
-  background: #ffb469;
-}
-*[data-active]:hover:after {
-  background: #ffb469 !important;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +29,13 @@ body {
 
 .is-active {
   display: flex;
+}
+
+*[data-active]:after {
+  background: #ffb469;
+}
+*[data-active]:hover:after {
+  background: #ffb469 !important;
 }
 
 .header {
@@ -576,7 +576,6 @@ body {
 .main_content-btn {
   padding: 30px 420px;
   position: relative;
-  overflow: hidden;
   color: #ebebeb;
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
@@ -592,9 +591,8 @@ body {
   z-index: 100;
 }
 .main_content-btn:after {
-  border-radius: 16px;
+  border-radius: 14px;
   position: absolute;
-  z-index: 0;
   content: "";
   height: 100%;
   width: 100%;
@@ -661,7 +659,6 @@ body {
 }
 .form-btn {
   position: relative;
-  overflow: hidden;
   color: #ebebeb;
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
@@ -678,9 +675,8 @@ body {
   z-index: 100;
 }
 .form-btn:after {
-  border-radius: 16px;
+  border-radius: 14px;
   position: absolute;
-  z-index: 0;
   content: "";
   height: 100%;
   width: 100%;

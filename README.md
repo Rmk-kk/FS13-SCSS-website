@@ -5,9 +5,11 @@
 ![Generic badge](https://img.shields.io/badge/SASS-v.1.56-pink.svg)
 
 ## Technologies
+
 * HTML 5
 * CSS 3
 * SASS (mixins, variables, SCSS)
+* JS (Small pop-up opens on clicking on 'magnifying glass/search' icon in header)
 
 ## Project Structure
 

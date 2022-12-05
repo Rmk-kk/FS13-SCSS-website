@@ -1,4 +1,4 @@
-@import "variables";
+@import "../abstracts/variables";
 
 * {
   margin: 0;
@@ -30,4 +30,14 @@ body {
 
 .is-active {
   display: flex;
+}
+
+*[data-active]{
+  &:after {
+    background: $color-orange;
+  }
+
+  &:hover:after {
+    background: $color-orange !important;
+  }
 }

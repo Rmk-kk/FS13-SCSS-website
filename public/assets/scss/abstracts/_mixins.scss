@@ -38,7 +38,6 @@
 
 @mixin btn-design {
   position: relative;
-  overflow: hidden;
   color:$color-text-primary;
   font-family: $primary-font;
   text-transform: uppercase;
@@ -55,9 +54,8 @@
   }
 
   &:after {
-    border-radius: 16px;
+    border-radius: 14px;
     position: absolute;
-    z-index: 0;
     content: '';
     height: 100%;
     width: 100%;
@@ -97,13 +95,4 @@
   }
 }
 
-*[data-active]{
-  &:after {
-    background: $color-orange;
-  }
-
-  &:hover:after {
-    background: $color-orange !important;
-  }
-}
 

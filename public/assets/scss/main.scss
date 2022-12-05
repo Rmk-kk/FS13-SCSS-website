@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Mulish:wght@400;500;600;700;900&display=swap');
 
-@import "variables";
-@import "mixins";
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-@import 'body';
-@import 'header';
+@import 'layout/body';
+@import 'layout/header';
 @import 'main_content';
 @import 'main_content-pinned';
 @import 'main_content-main';
 @import 'main_content-bottom';
 @import 'main_content-form';
-@import 'pop-up';
-@import 'footer';
+@import 'layout/pop-up';
+@import 'layout/footer';
