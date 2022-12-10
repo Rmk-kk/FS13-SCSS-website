@@ -52,3 +52,29 @@
     font-weight: 400;
   }
 }
+
+@media screen and (max-width: 400px) {
+    .footer-navigation_bar {
+      flex-direction: column;
+
+      &-item:not(:last-child) {
+        width: fit-content;
+        margin-bottom: 5px;
+      }
+    }
+
+  .footer-navigation_icons {
+    flex-direction: column;
+
+  }
+
+  .footer-navigation_bar-icons-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer-disclaimer {
+    text-align: center;
+  }
+}

@@ -122,3 +122,55 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .main_content_section-main {
+    margin-bottom: 35px;
+    & .main_item-card {
+      max-width: 980px;
+    }
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .main_content_section-main {
+    margin-bottom: 35px;
+    & .main_item-card {
+      max-width: 790px;
+      & h1 {
+        font-size: 3.4rem;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main_content_section-main {
+    margin-bottom: 35px;
+
+    & .main_item-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 390px;
+      height: 200px;
+      padding: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      & h1 {
+        font-size: 2rem;
+        line-height: 1.4;
+        margin: 15px 0;
+      }
+
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
