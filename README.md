@@ -9,6 +9,7 @@
 * HTML 5
 * CSS 3
 * SASS (mixins, variables, SCSS)
+* Media Queries, responsive design (Breakpoints on 1366, 1024, 812 and 400px)
 * JS (Small pop-up opens on clicking on 'magnifying glass/search' icon in header)
 
 ## Project Structure
